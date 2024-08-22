@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Leave Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="image">
+    <div class="container">
+
+        <h1>Employee Leave Management System</h1>
+        
+        
+        <div class="form-container">
+            <h2>Request Leave</h2>
+            <form id="leaveForm">
+                <label for="employeeName">Employee Name:</label>
+                <input type="text" id="employeeName" required>
+
+                <label for="leaveType">Leave Type:</label>
+                <select id="leaveType" required>
+                    <option value="Sick Leave">Sick Leave</option>
+                    <option value="Casual Leave">Casual Leave</option>
+                    <option value="Paid Leave">Paid Leave</option>
+                </select>
+
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" required>
+
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate" required>
+
+                <button type="submit">Submit Request</button>
+            </form>
+        </div>
+
+        
+        <div class="leave-requests">
+            <h2>Pending Leave Requests</h2>
+            <ul id="leaveList"></ul>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
